@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <!-- Button to open the modal login form -->
+    <div class="contact-container" style="background-color:black; height:100vh;display:flex;align-items:center;justify-content: space-evenly;">
+        <form action="https://api.web3forms.com/submit" method="POST" class="content-left" style="display: flex;flex-direction: column;align-items:start;gap:20px;">
+            <div class="contact-left-title">
+                <h2 style="font-weight:600;color:#a363aa;font-size:40px;margin-bottom: 5px;">Get in touch</h2>
+                <hr style="border:none;width:120px;height:5px;background-color: #a363aa;border-radius:10px;margin-bottom: 20px;">
+
+            </div>
+            <input type="hidden" name="access_key" value="a00ca1dc-6ed9-4afc-8835-3c3b16ced75a">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" style="width:400px;height:50px;border:none;outline:none;padding-left:25px;font-weight:500;color:#666;border-radius:50px;"required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" style="width:400px;height:50px;border:none;outline:none;padding-left:25px;font-weight:500;color:#666;border-radius:50px;" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" style="height:140px;width:400px;padding-top:15px;border-radius:20px;" required></textarea>
+            <button type="submit" style=" display:flex;align-items: center;padding:15px 30px;font-size:16px;color:#fff;gap:10px;border:none;border-radius:50px;background:linear-gradient(270deg, #ff994f, #fa6d86);cursor:pointer;">Submit ></button>
+        </form>
+    </div>
+    
+
+    <!-- SCROLL REVEAL JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- TYPED JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <! -- MAIN JS -->
+    <script src="JS/script.js"></script>
+
+    <script>
+        document.getElementById("read-more-btn").addEventListener("click", function() {
+            var moreContent = document.getElementById("more-content");
+            
+            if (moreContent.style.display === "none" || moreContent.style.display === "") {
+                moreContent.style.display = "block";
+                this.innerText = "Read Less"; // Change button text
+            } else {
+                moreContent.style.display = "none";
+                this.innerText = "Read More"; // Change back
+            }
+        });
+    </script>
+  </body>
+</html>    

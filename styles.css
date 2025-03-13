@@ -1,0 +1,5 @@
+.contact-inputs:focus{
+    border:2px solid #ff994f;
+}
+.contact-inputs ::placeholder{
+    color:#a9a9a9;
